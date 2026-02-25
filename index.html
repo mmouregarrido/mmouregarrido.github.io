@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Marta Moure-Garrido | Assistant Professor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Marta Moure-Garrido">
+<meta name="description" content="Assistant Professor in Telematics Engineering at UC3M. Research in network security, DNS privacy, IoT security, and AI-driven threat detection.">
 
 <style>
-
 /* ---------- GLOBAL ---------- */
-
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -24,11 +24,10 @@ body {
 }
 
 /* ---------- LINKS (VERY LIGHT BLUE) ---------- */
-
 a {
     color: #bfe6ff;
     text-decoration: none;
-    transition: 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
@@ -37,7 +36,6 @@ a:hover {
 }
 
 /* ---------- HEADER ---------- */
-
 .site-header {
     background-color: #0f172a;
     color: white;
@@ -51,14 +49,13 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* Left side (photo + text) */
 .header-left {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-/* Profile Photo */
+/* Profile photo */
 .profile-photo {
     width: 130px;
     height: 130px;
@@ -68,7 +65,7 @@ a:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 }
 
-/* Name & Text */
+/* Name and institution */
 .site-header h1 {
     margin: 0;
     font-size: 2.6rem;
@@ -87,23 +84,27 @@ a:hover {
     opacity: 0.75;
 }
 
-/* Header Links */
+/* Header social links */
 .header-right {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     margin-top: 15px;
 }
 
-.site-header a {
-    color: #d6f0ff;
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
 }
 
-.site-header a:hover {
-    color: #ffffff;
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(0.9) invert(1);
 }
 
 /* ---------- NAV ---------- */
-
 nav {
     background-color: #f8fafc;
     border-bottom: 1px solid #e2e8f0;
@@ -127,7 +128,6 @@ nav a:hover {
 }
 
 /* ---------- MAIN ---------- */
-
 main {
     padding: 60px 0;
 }
@@ -148,7 +148,6 @@ h2 {
 }
 
 /* ---------- FOOTER ---------- */
-
 .site-footer {
     background-color: #f1f5f9;
     padding: 50px 0;
@@ -161,30 +160,28 @@ h2 {
     flex-wrap: wrap;
 }
 
+.social-icon-footer {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: #0f172a;
+    transition: transform 0.2s ease;
+}
+
+.social-icon-footer:hover {
+    transform: scale(1.2);
+    fill: #1e293b;
+}
+
 .footer-note {
     font-size: 0.8rem;
     color: #64748b;
 }
 
-.site-footer a {
-    color: #9ed8ff;
-}
-
-.site-footer a:hover {
-    color: #bfe6ff;
-}
-
 /* ---------- RESPONSIVE ---------- */
-
 @media (max-width: 768px) {
-
-    .header-left {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header-content,
-    .footer-content {
+    .header-left, .header-content, .footer-content {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -203,7 +200,6 @@ h2 {
         height: 110px;
     }
 }
-
 </style>
 </head>
 
@@ -213,10 +209,7 @@ h2 {
     <div class="container header-content">
 
         <div class="header-left">
-            <!-- FOTO -->
             <img src="mmg.jpg" alt="Marta Moure-Garrido" class="profile-photo">
-
-            <!-- TEXTO -->
             <div>
                 <h1>Marta Moure-Garrido</h1>
                 <p class="position">Assistant Professor in Telematics Engineering</p>
@@ -227,14 +220,25 @@ h2 {
         </div>
 
         <div class="header-right">
-            <a href="https://scholar.google.com/citations?user=bJl7jRwAAAAJ" target="_blank">Google Scholar</a>
-            <a href="https://orcid.org/0000-0001-6068-6233" target="_blank">ORCID</a>
-            <a href="https://www.linkedin.com/in/martamoure-garrido" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=bJl7jRwAAAAJ" target="_blank" title="Google Scholar">
+                <img src="icons/google-scholar.svg" alt="Google Scholar" class="social-icon">
+            </a>
+            <a href="https://orcid.org/0000-0001-6068-6233" target="_blank" title="ORCID">
+                <img src="icons/orcid.svg" alt="ORCID" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/martamoure-garrido" target="_blank" title="LinkedIn">
+                <img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://bsky.app/profile/mmouregarrido.bsky.social" target="_blank" title="Bluesky">
+                <img src="icons/bluesky.svg" alt="Bluesky" class="social-icon">
+            </a>
+            <a href="https://x.com/m_mouregarrido" target="_blank" title="Twitter">
+                <img src="icons/x.svg" alt="Twitter" class="social-icon">
+            </a>
         </div>
 
     </div>
 </header>
-
 
 <nav>
     <div class="container">
@@ -252,12 +256,11 @@ h2 {
 <section id="about">
     <h2>About</h2>
     <p>
-        I am an Assistant Professor in Telematics Engineering at Universidad Carlos III de Madrid. 
+        I am an Assistant Professor in Telematics Engineering at Universidad Carlos III de Madrid.
         I obtained my PhD in October 2024.
     </p>
     <p>
-        My research focuses on network security, DNS privacy, encrypted traffic analysis, 
-        IoT security, and AI-driven threat detection.
+        My research focuses on network security, DNS privacy, encrypted traffic analysis, IoT security, and AI-driven threat detection.
     </p>
 </section>
 
@@ -275,12 +278,12 @@ h2 {
 <section id="publications">
     <h2>Selected Publications</h2>
     <ol class="publication-list">
-        <li><strong>CO-DEFEND: Continuous decentralized federated learning for secure DoH-based threat detection</strong> (2025). <br>DOI: <a href="https://doi.org/10.1016/j.comnet.2025.111961" target="_blank">10.1016/j.comnet.2025.111961</a></li>
-        <li><strong>AI Versus IoT Security: Fingerprinting and Defenses Against TLS Handshake-Based IoT Device Classification</strong> (2025). <br>DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3611160" target="_blank">10.1109/ACCESS.2025.3611160</a></li>
-        <li><strong>Inferring Mobile Applications Usage from DNS Traffic</strong> (2024). <br>DOI: <a href="https://doi.org/10.1016/j.adhoc.2024.103601" target="_blank">10.1016/j.adhoc.2024.103601</a></li>
-        <li><strong>Reducing DNS Traffic to Enhance Home IoT Device Privacy</strong> (2024). <br>DOI: <a href="https://doi.org/10.3390/s24092690" target="_blank">10.3390/s24092690</a></li>
-        <li><strong>Real Time Detection of Malicious DoH Traffic Using Statistical Analysis</strong> (2023). <br>DOI: <a href="https://doi.org/10.1016/j.comnet.2023.109724" target="_blank">10.1016/j.comnet.2023.109724</a></li>
-        <li><strong>Entropy-Based Anomaly Detection in Household Electricity Consumption</strong> (2022). <br>DOI: <a href="https://doi.org/10.3390/en15051837" target="_blank">10.3390/en15051837</a></li>
+        <li><strong>CO-DEFEND: Continuous decentralized federated learning for secure DoH-based threat detection</strong> (2025). DOI: <a href="https://doi.org/10.1016/j.comnet.2025.111961" target="_blank">10.1016/j.comnet.2025.111961</a></li>
+        <li><strong>AI Versus IoT Security: Fingerprinting and Defenses Against TLS Handshake-Based IoT Device Classification</strong> (2025). DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3611160" target="_blank">10.1109/ACCESS.2025.3611160</a></li>
+        <li><strong>Inferring Mobile Applications Usage from DNS Traffic</strong> (2024). DOI: <a href="https://doi.org/10.1016/j.adhoc.2024.103601" target="_blank">10.1016/j.adhoc.2024.103601</a></li>
+        <li><strong>Reducing DNS Traffic to Enhance Home IoT Device Privacy</strong> (2024). DOI: <a href="https://doi.org/10.3390/s24092690" target="_blank">10.3390/s24092690</a></li>
+        <li><strong>Real Time Detection of Malicious DoH Traffic Using Statistical Analysis</strong> (2023). DOI: <a href="https://doi.org/10.1016/j.comnet.2023.109910" target="_blank">10.1016/j.comnet.2023.109910</a></li>
+        <li><strong>Entropy-Based Anomaly Detection in Household Electricity Consumption</strong> (2022). DOI: <a href="https://doi.org/10.3390/en15051837" target="_blank">10.3390/en15051837</a></li>
     </ol>
 </section>
 
@@ -301,8 +304,24 @@ h2 {
         </div>
 
         <div>
-            <p>&copy; 2025 Marta Moure-Garrido</p>
-            <p>Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
+            <p>Find me online:
+                <a href="https://scholar.google.com/citations?user=bJl7jRwAAAAJ" target="_blank" title="Google Scholar">
+                    <img src="icons/google-scholar.svg" alt="Google Scholar" class="social-icon-footer">
+                </a>
+                <a href="https://orcid.org/0000-0001-6068-6233" target="_blank" title="ORCID">
+                    <img src="icons/orcid.svg" alt="ORCID" class="social-icon-footer">
+                </a>
+                <a href="https://www.linkedin.com/in/martamoure-garrido" target="_blank" title="LinkedIn">
+                    <img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon-footer">
+                </a>
+                <a href="https://bsky.app/profile/mmouregarrido.bsky.social" target="_blank" title="Bluesky">
+                    <img src="icons/bluesky.svg" alt="Bluesky" class="social-icon-footer">
+                </a>
+                <a href="https://x.com/m_mouregarrido" target="_blank" title="Twitter">
+                    <img src="icons/x.svg" alt="Twitter" class="social-icon-footer">
+                </a>
+            </p>
+            <p>&copy; 2025 Marta Moure-Garrido | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
             <p class="footer-note">Last updated: February 2026</p>
         </div>
     </div>
